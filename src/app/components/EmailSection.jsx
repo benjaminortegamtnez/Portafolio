@@ -46,7 +46,7 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A37D04] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
+        <h5 className="text-xl font-bold text-[#FECA01] my-2">
           Contacto
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
@@ -131,7 +131,7 @@ const EmailSection = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#A37D04] hover:bg-[#FECA01] text-white hover:text-black font-medium py-2.5 px-5 rounded-lg w-full"
+              className="bg-[#1b1d22] border border-opacity-30 border-[#FECA01] hover:bg-[#0f0f0f] text-[#FECA01] font-medium py-2.5 px-5 rounded-lg w-full"
             >
               Enviar Mensaje
             </button>
