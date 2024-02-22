@@ -40,7 +40,7 @@ const projectsData = [
     image: "/images/projects/portafolio.JPG",
     tag: ["Web"],
     gitUrl: "https://github.com/benjaminortegamtnez/Portafolio",
-    previewUrl: "https://benjamin-portafolio-web.netlify.app/",
+    previewUrl: "/",
   },
   {
     id: 5,

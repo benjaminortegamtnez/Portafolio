@@ -14,10 +14,10 @@ const DisenoLogoCards = () => {
         <div>
         <h2 className="text-4xl font-semibold mt-4 mb-8 md:mb-12 text-transparent bg-clip-text bg-gradient-to-br from-[#A37D04] via-[#FECA01] to-[#FFD757]">
           Logotipos
-          <span className="block text-2xl text-white">observa los logotipos creados</span>
+          <span className="block text-2xl text-white">Desliza y observa los logotipos creados.</span>
         </h2>
         <p className="text-base lg:text-lg text-white">
-        En esta sección, te invito a explorar logotipos profesionales que abarcan diversas categorías.
+        Te invito a explorar los logotipos, desde símbolos impactantes hasta marcas de productos memorables.
           </p>
           </div>
         <div className="px-5 mt-5">
