@@ -4,7 +4,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Benjamín - Portafolio Web Site",
+  title: "Benjamín - Portafolio Website",
   description: "Explora mi portafolio web para descubrir una amplia variedad de trabajos que abarcan desde diseño hasta desarrollo full-stack. Sumérgete en proyectos creativos y funcionales que destacan mi experiencia y habilidades en el mundo digital.",
 };
 

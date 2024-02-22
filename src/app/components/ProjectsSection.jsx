@@ -8,17 +8,17 @@ import DisenoCard from "./DisenoCard";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "FrontEnd Store",
+    description: "Responsive - Proyecto 1 - HTML5, CSS3",
     image: "/images/projects/frontend_store.JPG",
     tag: ["Web"],
     gitUrl: "https://github.com/benjaminortegamtnez/Pagina1-Design-Freelancer",
-    previewUrl: "/",
+    previewUrl: "https://pagina-frontend-store.netlify.app/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Blog De Café",
+    description: "Responsive - Proyecto 2 - HTML5, CSS3",
     image: "/images/projects/blogdecafe.JPG",
     tag: ["Web"],
     gitUrl: "https://github.com/benjaminortegamtnez/Pagina3-BlogDeCafe",
@@ -26,33 +26,42 @@ const projectsData = [
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "E-commerce Laboratorio Clínico Poniente",
+    description: "Responsive - Proyecto 3 - HTML5, CSS3, Bootstrap, JS, React, Vite, Java, MySQL",
     image: "/images/projects/LCP.JPG",
     tag: ["Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/LeonardoRosas92/laboratorio-poniente",
+    previewUrl: "https://dev-laboratorio-clinico-poniente.netlify.app/",
   },
   {
     id: 4,
-    title: "Logotipos",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["Diseño"],
-    gitUrl: "/#diseno",
-    previewUrl: "/",
+    title: "Portafolio Website",
+    description: "Responsive - Proyecto 4 - HTML5, React, NextJS, Tailwind CSS",
+    image: "/images/projects/portafolio.JPG",
+    tag: ["Web"],
+    gitUrl: "https://github.com/benjaminortegamtnez/Portafolio",
+    previewUrl: "https://benjamin-portafolio-web.netlify.app/",
   },
   {
     id: 5,
-    title: "Carteles e Infografías",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
+    title: "Logotipos",
+    description: "Project 4 description",
+    image: "/images/projects/logos.JPG",
     tag: ["Diseño"],
-    gitUrl: "/",
+    gitUrl: "/#tarjetas",
     previewUrl: "/",
   },
   {
     id: 6,
+    title: "Carteles e Infografías",
+    description: "Authentication and CRUD operations",
+    image: "/images/projects/infografia-01.jpg",
+    tag: ["Diseño"],
+    gitUrl: "/",
+    previewUrl: "/",
+  },
+  {
+    id: 7,
     title: "Fotografía",
     description: "Project 5 description",
     image: "/images/projects/Benjamin_foto.jpg",
@@ -107,13 +116,13 @@ const ProjectsSection = () => {
             transition={{ duration: 0.3, delay: index * 0.4 }}
           >
            {project.tag.includes("Diseño") ? (
-              <DisenoCard
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                imgUrl={project.image}
-                previewUrl={project.gitUrl}
-              />
+                <DisenoCard
+                  key={project.id}
+                  title={project.title}
+                  description={project.description}
+                  imgUrl={project.image}
+                  previewUrl={project.gitUrl}
+                />
             ) : (
               <ProjectCard
                 key={project.id}

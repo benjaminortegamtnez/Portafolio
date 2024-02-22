@@ -2,10 +2,8 @@ import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import ProjectsSection from "./components/ProjectsSection";
-import EmailSection from "./components/EmailSection";
 import Footer from "./components/Footer";
-import DisenoLogo from "./components/DisenoLogo";
-
+import DisenoLogoCards from "./components/DisenoLogoCards";
 
 
 export default function Home() {
@@ -16,10 +14,10 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
-        <EmailSection />
+        <DisenoLogoCards />
       </div>
       <Footer />
-      <DisenoLogo />
+      
     </main>
     
   );
