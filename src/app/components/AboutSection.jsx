@@ -23,8 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2 text-[#FECA01]">
-        <li>Bootcamp en Desarrollo Java Full Stack, Generation México.</li>
-        <li>Universidad Autónoma Metropolitana, Cuajimalpa.</li>
+        <li>Bootcamp en Desarrollo Java Full Stack - Generation México.</li>
+        <li>Universidad Autónoma Metropolitana - Cuajimalpa.</li>
       </ul>
     ),
   },
@@ -33,7 +33,7 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2 text-[#FECA01]">
-        <li>Certificación Java FullStack Developer, Generation México.</li>
+        <li>Certificación Java FullStack Developer - Generation México.</li>
       </ul>
     ),
   },

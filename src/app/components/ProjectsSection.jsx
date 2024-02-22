@@ -48,7 +48,7 @@ const projectsData = [
     description: "Project 4 description",
     image: "/images/projects/logos.JPG",
     tag: ["Diseño"],
-    gitUrl: "/#tarjetas",
+    gitUrl: "/logoPage",
     previewUrl: "/",
   },
   {
