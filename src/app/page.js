@@ -1,9 +1,11 @@
-import HeroSection from "./components/HeroSection";
-import Navbar from "./components/Navbar";
-import AboutSection from "./components/AboutSection";
-import ProjectsSection from "./components/ProjectsSection";
-import Footer from "./components/Footer";
-import DisenoLogoCards from "./components/DisenoLogoCards";
+import HeroSection from "@/components/HeroSection";
+import Navbar from "@/components/Navbar";
+import AboutSection from "@/components/AboutSection";
+import ProjectsSection from "@/components/ProjectsSection";
+import Footer from "@/components/Footer";
+import DisenoLogoCards from "@/components/DisenoLogoCards";
+import DisenoInfografiaCard from "@/components/DisenoInfografiaCard";
+
 
 
 export default function Home() {
@@ -15,6 +17,7 @@ export default function Home() {
         <AboutSection />
         <ProjectsSection />
         {/* <DisenoLogoCards /> */}
+        {/* <DisenoInfografiaCard /> */}
       </div>
       <Footer />
       

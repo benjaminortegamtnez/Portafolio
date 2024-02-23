@@ -3,7 +3,7 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
 
-const DisenoCard = ({ imgUrl, title, description, previewUrl, }) => {
+const DisenoCard = ({ imgUrl, title, description, previewUrl, onEyeIconClick }) => {
   return (
     <div>
       <div
@@ -15,7 +15,10 @@ const DisenoCard = ({ imgUrl, title, description, previewUrl, }) => {
             href={previewUrl}
             className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-[#FECA01] group/link"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-[#FECA01]" />
+            <EyeIcon 
+            className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-[#FECA01]" 
+            onClick={onEyeIconClick}
+            />
         </Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ import DisenoLogoCardsData from './DisenoLogoCardsData';
 const DisenoLogoCards = () => {
 
   return (
-    <section id="tarjetas">
+    <section id="logo">
     <div className="relative px-6 py-20 md:py-64">
       <div className="block max-m-5xl mx-auto md:grid md:grid-cols-2">
         <div>

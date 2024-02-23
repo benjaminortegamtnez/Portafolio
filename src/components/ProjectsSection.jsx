@@ -4,6 +4,8 @@ import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 import DisenoCard from "./DisenoCard";
+import DisenoLogoCards from "./DisenoLogoCards";
+import DisenoInfografiaCard from "./DisenoInfografiaCard";
 
 const projectsData = [
   {
@@ -48,7 +50,7 @@ const projectsData = [
     description: "Project 4 description",
     image: "/images/projects/logos.JPG",
     tag: ["Diseño"],
-    gitUrl: "/logoPage",
+    gitUrl: "/#logo",
     previewUrl: "/",
   },
   {
@@ -57,7 +59,7 @@ const projectsData = [
     description: "Authentication and CRUD operations",
     image: "/images/projects/infografia-01.jpg",
     tag: ["Diseño"],
-    gitUrl: "/",
+    gitUrl: "/#infografia",
     previewUrl: "/",
   },
   {
@@ -71,13 +73,26 @@ const projectsData = [
   },
 ];
 
-const ProjectsSection = () => {
+const ProjectsSection = () => { 
   const [tag, setTag] = useState("Diseño");
+  const [selectedComponent, setSelectedComponent] = useState(null); // Nuevo estado
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
 
   const handleTagChange = (newTag) => {
     setTag(newTag);
+    setSelectedComponent(null); // Limpiar el componente seleccionado al cambiar la etiqueta
+  };
+
+  const handleEyeIconClick = (gitUrl) => {
+    // Establecer el componente seleccionado según el gitUrl
+    if (gitUrl === "/#logo") {
+      setSelectedComponent("DisenoLogoCards");
+    } else if (gitUrl === "/#infografia") {
+      setSelectedComponent("DisenoInfografiaCard");
+    } else {
+      setSelectedComponent(null);
+    }
   };
 
   const filteredProjects = projectsData.filter((project) =>
@@ -122,8 +137,9 @@ const ProjectsSection = () => {
                   description={project.description}
                   imgUrl={project.image}
                   previewUrl={project.gitUrl}
-                />
-            ) : (
+                  onEyeIconClick={() => handleEyeIconClick(project.gitUrl)}
+                  />
+              ) : (
               <ProjectCard
                 key={project.id}
                 title={project.title}
@@ -136,6 +152,13 @@ const ProjectsSection = () => {
           </motion.li>
         ))}
       </ul>
+      {/* Renderizar el componente específico solo una vez */}
+      {selectedComponent === "DisenoLogoCards" && (
+        <DisenoLogoCards />
+      )}
+      {selectedComponent === "DisenoInfografiaCard" && (
+        <DisenoInfografiaCard />
+      )}
     </section>
   );
 };
