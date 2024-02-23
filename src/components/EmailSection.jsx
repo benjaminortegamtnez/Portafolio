@@ -53,7 +53,7 @@ const EmailSection = () => {
           {" "}
           Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada está siempre abierta. Si tienes alguna pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!
         </p>
-        <div className="socials flex flex-row gap-2">
+        {/* <div className="socials flex flex-row gap-2">
 
         <a 
               href="https://www.linkedin.com/in/benjamín-ortega-martínez" 
@@ -74,7 +74,7 @@ const EmailSection = () => {
                 <Image src={GithubIcon} alt="Github Icon" />
               </div>
             </a>       
-        </div>
+        </div> */}
       </div>
       <div>
         {emailSubmitted ? (
