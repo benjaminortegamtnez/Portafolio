@@ -152,6 +152,7 @@ const ProjectsSection = () => {
           </motion.li>
         ))}
       </ul>
+      <div>
       {/* Renderizar el componente específico solo una vez */}
       {selectedComponent === "DisenoLogoCards" && (
         <DisenoLogoCards />
@@ -159,6 +160,7 @@ const ProjectsSection = () => {
       {selectedComponent === "DisenoInfografiaCard" && (
         <DisenoInfografiaCard />
       )}
+      </div>
     </section>
   );
 };
