@@ -5,6 +5,8 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import {EffectCards} from 'swiper/modules';
 import DisenoLogoCardsData from './DisenoLogoCardsData';
+import Image from 'next/image';
+
 
 const DisenoInfografiaCard = () => {
 
@@ -29,7 +31,7 @@ const DisenoInfografiaCard = () => {
           >
             {DisenoLogoCardsData.map((card) => (  // Corrige la sintaxis del mapeo
               <SwiperSlide key={card.id}>
-                <img src={card.image} alt={`Logotipo ${card.id}`} width="400" height="300" />
+                <Image src={card.image} alt={`Logotipo ${card.id}`} width="400" height="300" />
                 {/* <h3 className="text-white text-center text-xl mt-2" style={{ background: '#000'}}> {card.title}</h3> */}
               </SwiperSlide>
             ))}
