@@ -40,10 +40,10 @@ const DisenoLogoCards = () => {
           </Swiper>
         </div>
       </div>
-      <div className="flex items-center justify-center mt-20 -mb-40">
+      <div className="flex items-center justify-center mt-20">
           <Link href="/#projects">
             <div className="rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-white hover:text-[#FECA01] hover:border-[#FECA01]">
-              Menu Diseño
+              Diseño
             </div>
           </Link>
         </div>
