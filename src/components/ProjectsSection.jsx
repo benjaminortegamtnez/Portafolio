@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import DisenoCard from "./DisenoCard";
 import DisenoLogoCards from "./DisenoLogoCards";
 import DisenoInfografiaCard from "./DisenoInfografiaCard";
+import InfografiaGallery from "./InfografiaGallery";
 
 const projectsData = [
   {
@@ -59,7 +60,7 @@ const projectsData = [
     description: "Authentication and CRUD operations",
     image: "/images/projects/infografia-01.jpg",
     tag: ["Diseño"],
-    gitUrl: "/#infografia",
+    gitUrl: "/#galleryInfo",
     previewUrl: "/",
   },
   {
@@ -88,8 +89,8 @@ const ProjectsSection = () => {
     // Establecer el componente seleccionado según el gitUrl
     if (gitUrl === "/#logo") {
       setSelectedComponent("DisenoLogoCards");
-    } else if (gitUrl === "/#infografia") {
-      setSelectedComponent("DisenoInfografiaCard");
+    } else if (gitUrl === "/#galleryInfo") {
+      setSelectedComponent("DisenoInfoGallery");
     } else {
       setSelectedComponent(null);
     }
@@ -157,8 +158,8 @@ const ProjectsSection = () => {
       {selectedComponent === "DisenoLogoCards" && (
         <DisenoLogoCards />
       )}
-      {selectedComponent === "DisenoInfografiaCard" && (
-        <DisenoInfografiaCard />
+      {selectedComponent === "DisenoInfoGallery" && (
+        <InfografiaGallery />
       )}
       </div>
     </section>

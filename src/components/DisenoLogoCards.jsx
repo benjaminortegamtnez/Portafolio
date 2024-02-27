@@ -6,6 +6,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import {EffectCards} from 'swiper/modules';
 import DisenoLogoCardsData from './DisenoLogoCardsData';
 import Image from 'next/image';
+import Link from "next/link";
+
 
 
 const DisenoLogoCards = () => {
@@ -15,9 +17,9 @@ const DisenoLogoCards = () => {
     <div className="relative px-6 py-20 md:py-64">
       <div className="block max-m-5xl mx-auto md:grid md:grid-cols-2">
         <div>
-        <h2 className="text-4xl font-semibold mt-4 mb-8 md:mb-12 text-transparent bg-clip-text bg-gradient-to-br from-[#A37D04] via-[#FECA01] to-[#FFD757]">
+        <h2 className="text-4xl font-bold mt-4 mb-8 md:mb-12 text-[#FECA01]">
           Logotipos
-          <span className="block text-2xl text-white">Desliza y observa los logotipos creados.</span>
+          <span className="block text-2xl text-white font-semibold">Desliza y observa los logotipos creados.</span>
         </h2>
         <p className="text-base lg:text-lg text-white">
         Te invito a explorar los logotipos, desde símbolos impactantes hasta marcas de productos memorables.
@@ -38,6 +40,13 @@ const DisenoLogoCards = () => {
           </Swiper>
         </div>
       </div>
+      <div className="flex items-center justify-center mt-20 -mb-40">
+          <Link href="/#projects">
+            <div className="rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-white hover:text-[#FECA01] hover:border-[#FECA01]">
+              Menu Diseño
+            </div>
+          </Link>
+        </div>
     </div>
     </section>
   );

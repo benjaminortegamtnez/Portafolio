@@ -31,3 +31,66 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Pagina Infografias */
+
+/* Estilo para atenuar las miniaturas de las imágenes al pasar el cursor sobre ellas */
+.pics:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo para el modelo de la imagen en pantalla completa */
+.model {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  overflow: hidden;
+  z-index: 999;
+}
+
+.model.open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Estilo para la imagen en pantalla completa */
+.model img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+  box-sizing: border-box;
+  padding: 20px 0 20px;
+  margin: 0 auto;
+}
+
+/* Estilo para el icono XMarkIcon en la esquina superior derecha */
+.model .XMarkIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+
+.info-container {
+  width: auto; /* Puedes ajustar el ancho según tus necesidades */
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente para mejorar la legibilidad */
+  border-radius: 0 0 8px 8px;
+  text-align: left; /* Alinea el texto a la izquierda dentro del contenedor */
+  color: #fff;
+  margin-top: 4px;
+}

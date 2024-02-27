@@ -5,6 +5,7 @@ import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
 import DisenoLogoCards from "@/components/DisenoLogoCards";
 import DisenoInfografiaCard from "@/components/DisenoInfografiaCard";
+import InfografiaGallery from "@/components/InfografiaGallery";
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
         <ProjectsSection />
         {/* <DisenoLogoCards /> */}
         {/* <DisenoInfografiaCard /> */}
+        {/* <InfografiaGallery /> */}
       </div>
       <Footer />
       
