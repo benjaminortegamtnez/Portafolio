@@ -108,8 +108,9 @@ const RedesSociales = () => {
           </p>
           <div className="md:grid md:grid-cols-4">
             <div></div>
-            <div className="iframe-container md:col-span-3 aspect-w-16 aspect-h-9">
-              <iframe 
+            <div className="iframe-container md:col-span-2 mt-2">
+              <iframe
+                className="w-full" 
                 width="560" 
                 height="315" 
                 src="https://www.youtube.com/embed/1W0IUqz4YXI?si=Ih55PcywjkLaR46O" title="YouTube video player" 
