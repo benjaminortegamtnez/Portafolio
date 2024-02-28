@@ -50,6 +50,13 @@ const InfografiaGallery = () => {
         "/images/IconosHerramientas/photoshop.png",
       ],
     },
+    {
+      id: 6,
+      imagSrc: "/images/infografias/infografia_6.jpg",
+      title: "Cartel",
+      description: "Formato y distribución digital.",
+      herramienta: "/images/IconosHerramientas/ilustrador.png",
+    },
   ];
 
   const [model, setModel] = useState(false);
@@ -65,12 +72,10 @@ const InfografiaGallery = () => {
     setTempImgSrc("");
   };
 
-  // boton para volver al menu de diseño
   
-
   return (
     <section id="galleryInfo">
-      <div className="relative px-6 py-20 md:py-20">
+      <div className="relative px-6 py-20 md:py-20 ">
         <div className="block max-m-5xl mx-auto">
           <h2 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
             Infografías, Póster y Carteles.

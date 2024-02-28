@@ -5,8 +5,8 @@ import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
 import DisenoCard from "./DisenoCard";
 import DisenoLogoCards from "./DisenoLogoCards";
-import DisenoInfografiaCard from "./DisenoInfografiaCard";
 import InfografiaGallery from "./InfografiaGallery";
+import RedesSociales from "./RedesSociales";
 
 const projectsData = [
   {
@@ -43,12 +43,12 @@ const projectsData = [
     image: "/images/projects/portafolio.JPG",
     tag: ["Web"],
     gitUrl: "https://github.com/benjaminortegamtnez/Portafolio",
-    previewUrl: "/",
+    previewUrl: "https://benjamin-portafoliio.vercel.app/",
   },
   {
     id: 5,
     title: "Logotipos",
-    description: "Project 4 description",
+    description: "Diseños finales de logotipos.",
     image: "/images/projects/logos.JPG",
     tag: ["Diseño"],
     gitUrl: "/#logo",
@@ -57,7 +57,7 @@ const projectsData = [
   {
     id: 6,
     title: "Carteles e Infografías",
-    description: "Authentication and CRUD operations",
+    description: "Comunicación visual.",
     image: "/images/projects/infografia-01.jpg",
     tag: ["Diseño"],
     gitUrl: "/#galleryInfo",
@@ -65,11 +65,11 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "Fotografía",
-    description: "Project 5 description",
-    image: "/images/projects/Benjamin_foto.jpg",
+    title: "Diseñador Gráfico en CUDI",
+    description: "Diseño de imágenes para difusión en medios digitales.",
+    image: "/images/projects/4.png",
     tag: ["Diseño"],
-    gitUrl: "/#contact",
+    gitUrl: "/#redes",
     previewUrl: "/",
   },
 ];
@@ -91,6 +91,8 @@ const ProjectsSection = () => {
       setSelectedComponent("DisenoLogoCards");
     } else if (gitUrl === "/#galleryInfo") {
       setSelectedComponent("DisenoInfoGallery");
+    } else if (gitUrl === "/#redes") {
+      setSelectedComponent("RedesSociales");
     } else {
       setSelectedComponent(null);
     }
@@ -160,6 +162,9 @@ const ProjectsSection = () => {
       )}
       {selectedComponent === "DisenoInfoGallery" && (
         <InfografiaGallery />
+      )}
+      {selectedComponent === "RedesSociales" && (
+        <RedesSociales />
       )}
       </div>
     </section>

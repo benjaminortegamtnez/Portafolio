@@ -23,7 +23,7 @@ const DisenoCard = ({ imgUrl, title, description, previewUrl, onEyeIconClick }) 
         </div>
       </div>
       <div className="text-white rounded-b-xl mt-1 bg-[#0c0c0c] py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
+        <h5 className="text-xl font-semibold mb-2 text-[#FECA01]">{title}</h5>
         <p className="text-[#ADB7BE]">{description}</p>
       </div>
     </div>
