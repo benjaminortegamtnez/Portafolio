@@ -1,7 +1,7 @@
 // import { EmailTemplate } from '../../../components/EmailTemplate';
 import { Resend } from 'resend';
 
-const resend = new Resend("re_GWuzQ4bM_J9AdVsqnpj66crWJqAX5fu5m");
+const resend = new Resend("re_MHJUoBwH_PmgZzJnXqPVNsX7h2pX4jyNS");
 
 export async function POST() {
   try {
