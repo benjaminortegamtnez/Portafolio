@@ -31,11 +31,19 @@ const EmailSection = () => {
     };
 
     const response = await fetch(endpoint, options);
+    if (!response.ok) {
+      console.error(`Error: ${response.status} - ${response.statusText}`);
+      // Puedes agregar lógica adicional según tus necesidades
+      return;
+    }
+    
     const resData = await response.json();
 
     if (response.status === 200) {
       console.log("Message sent.");
       setEmailSubmitted(true);
+    } else {
+      console.error("Failed to send message:", resData.error); // Puedes mostrar el mensaje de error recibido desde el servidor
     }
   };
 
