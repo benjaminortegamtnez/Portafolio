@@ -7,6 +7,7 @@ import DisenoCard from "./DisenoCard";
 import DisenoLogoCards from "./DisenoLogoCards";
 import InfografiaGallery from "./InfografiaGallery";
 import RedesSociales from "./RedesSociales";
+import MaquetaGallery from "./MaquetaGallery";
 
 const projectsData = [
   {
@@ -72,6 +73,15 @@ const projectsData = [
     gitUrl: "/#redes",
     previewUrl: "/",
   },
+  {
+    id: 8,
+    title: "Diseño de Maqueta Web - DiNaRe",
+    description: "Diseño de imágenes para difusión en medios digitales.",
+    image: "/images/projects/maqueta.png",
+    tag: ["Diseño"],
+    gitUrl: "/#maqueta",
+    previewUrl: "/#maqueta",
+  },
 ];
 
 const ProjectsSection = () => { 
@@ -93,6 +103,8 @@ const ProjectsSection = () => {
       setSelectedComponent("DisenoInfoGallery");
     } else if (gitUrl === "/#redes") {
       setSelectedComponent("RedesSociales");
+    } else if (gitUrl === "/#maqueta") {
+      setSelectedComponent("MaquetaWeb");
     } else {
       setSelectedComponent(null);
     }
@@ -166,8 +178,11 @@ const ProjectsSection = () => {
       {selectedComponent === "RedesSociales" && (
         <RedesSociales />
       )}
+      {selectedComponent === "MaquetaWeb" && (
+        <MaquetaGallery />
+      )}
       </div>
-    </section>
+    </section> 
   );
 };
 

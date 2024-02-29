@@ -3,7 +3,6 @@ import Navbar from "@/components/Navbar";
 import AboutSection from "@/components/AboutSection";
 import ProjectsSection from "@/components/ProjectsSection";
 import Footer from "@/components/Footer";
-import RedesSociales from "@/components/RedesSociales";
 
 
 export default function Home() {
@@ -14,7 +13,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <ProjectsSection />
-        {/* <RedesSociales /> */}
+        
       </div>
       <Footer />
       
