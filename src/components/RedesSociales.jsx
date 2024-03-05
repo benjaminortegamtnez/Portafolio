@@ -87,7 +87,7 @@ const RedesSociales = () => {
         <h2 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
           Diseñador Gráfico en CUDI
         </h2>
-        <p className="text-base sm:text-sm md:text-lg lg:text-lg text-white md:mb-8">
+        <p className="sm:text-base text-sm md:text-lg lg:text-lg text-white md:mb-8">
           Durante mi servicio social, desempeñé un papel clave en la creación de materiales de apoyo e imágenes de difusión para diversas campañas de divulgación científica. Colaboré en la realización de más de 20 eventos, como videoconferencias, conversatorios, jornadas de ciberseguridad, talleres y seminarios, generando materiales adaptados a distintos formatos para medios digitales, redes sociales y el sitio web oficial de CUDI. Solo presento tres ejemplos en esta sección:
         </p>
         {data.map(({ id, imgSrc1, description1, herramienta1, imgSrc2, description2, herramienta2, imgSrc3, description3, herramienta3 }) => (
@@ -103,7 +103,7 @@ const RedesSociales = () => {
           <h2 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
             Material Gráfico
           </h2>
-          <p className="text-base lg:text-lg text-white md:mb-8">
+          <p className="sm:text-base text-sm lg:text-lg text-white md:mb-8">
           Contribuí en la creación de imágenes y materiales gráficos para el video destacado de Servicios CUDI 2022.
           </p>
           <div className="md:grid md:grid-cols-4">
@@ -126,7 +126,7 @@ const RedesSociales = () => {
           <h3 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
             Créditos
           </h3>
-          <p className="text-base lg:text-lg text-white">
+          <p className="sm:text-base text-sm lg:text-lg text-white">
             Al formar parte de la distinguida comunidad de CUDI durante mi servicio social, me enorgullece compartir que mi contribución se refleja en la sección de <a href="https://cudi.edu.mx/creditos" target="_blank" rel="noopener noreferrer" className="text-[#FECA01] underline">créditos del sitio web oficial de CUDI</a>. Aprecio profundamente la oportunidad de participar en proyectos significativos y colaborar a través de mi labor como Diseñador Gráfico.
           </p>
         </div>

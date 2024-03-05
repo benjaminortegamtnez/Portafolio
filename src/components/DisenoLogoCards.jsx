@@ -21,7 +21,7 @@ const DisenoLogoCards = () => {
           Logotipos
           <span className="block text-2xl text-white font-semibold">Desliza y observa los logotipos creados.</span>
         </h2>
-        <p className="text-base lg:text-lg text-white">
+        <p className="sm:text-base text-sm lg:text-lg text-white">
         Te invito a explorar los logotipos, desde símbolos impactantes hasta marcas de productos memorables.
           </p>
           </div>

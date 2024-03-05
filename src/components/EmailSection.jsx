@@ -1,53 +1,11 @@
-"use client";
-import React, { useState } from "react";
+import React from "react";
 import GithubIcon from "../../public/github-icon.svg";
 import LinkedinIcon from "../../public/linkedin-icon.svg";
-// import Link from "next/link";
+import ContactIcon from "../../public/contact-icon.svg";
+import MailIcon from "../../public/mail-icon.svg";
 import Image from "next/image";
 
 const EmailSection = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
-
-    // Form the request for sending data to the server.
-    const options = {
-      // The method is POST because we are sending data.
-      method: "POST",
-      // Tell the server we're sending JSON.
-      headers: {
-        "Content-Type": "application/json",
-      },
-      // Body of the request is the JSON data we created above.
-      body: JSONdata,
-    };
-
-    const response = await fetch(endpoint, options);
-    if (!response.ok) {
-      console.error(`Error: ${response.status} - ${response.statusText}`);
-      // Puedes agregar lógica adicional según tus necesidades
-      return;
-    }
-    
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
-    } else {
-      console.error("Failed to send message:", resData.error); // Puedes mostrar el mensaje de error recibido desde el servidor
-    }
-  };
-
-
   return (
     <section
       id="contact"
@@ -55,100 +13,94 @@ const EmailSection = () => {
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A37D04] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
-        <h5 className="text-xl font-bold text-[#FECA01] my-2">
+      <div className="col-span-3">
+        <h2 className="text-4xl font-bold text-[#FECA01] my-2">
           Contacto
-        </h5>
-        <p className="text-[#ADB7BE] mb-4 max-w-md">
-          {" "}
-          Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada está siempre abierta. Si tienes alguna pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!
-        </p>
-        <div className="socials flex flex-row gap-2">
-
-        <a 
-              href="https://www.linkedin.com/in/benjamín-ortega-martínez" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <div className="mt-4 mr-1 hover:bg-[#292929] rounded-2xl">
-                <Image src={LinkedinIcon} alt="Linkedin Icon" />
-              </div>
-            </a> 
-
-            <a 
-              href="https://github.com/benjaminortegamtnez" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <div className="mt-4 mr-1 hover:bg-[#292929] rounded-2xl">
-                <Image src={GithubIcon} alt="Github Icon" />
-              </div>
-            </a>       
-        </div>
+        </h2>
       </div>
+        <p className="sm:text-base text-sm text-[#ADB7BE] mb-4 mt-5 max-w-md">
+        ¡Hola! Soy un apasionado diseñador y desarrollador web en busca de emocionantes oportunidades profesionales. Mi bandeja de entrada siempre está abierta para discutir proyectos, ideas creativas o simplemente para saludar. Estoy aquí para responder cualquier pregunta que tengas. ¡Espero saber de ti pronto!
+        </p>
+      </div>
+
       <div>
-        {emailSubmitted ? (
-          <p className="text-green-500 text-sm mt-2">
-            ¡Correo enviado exitosamente!
-          </p>
-        ) : (
-          <form className="flex flex-col" onSubmit={handleSubmit}>
-            <div className="mb-6">
-              <label
-                htmlFor="email"
-                className="text-white block mb-2 text-sm font-medium"
-              >
-                Correo
-              </label>
-              <input
-                name="email"
-                type="email"
-                id="email"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="correo@gmail.com"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="subject"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Asunto
-              </label>
-              <input
-                name="subject"
-                type="text"
-                id="subject"
-                required
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Breve descripción"
-              />
-            </div>
-            <div className="mb-6">
-              <label
-                htmlFor="message"
-                className="text-white block text-sm mb-2 font-medium"
-              >
-                Mensaje
-              </label>
-              <textarea
-                name="message"
-                id="message"
-                className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                placeholder="Me comunico para hablar acerca de..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="bg-[#1b1d22] border border-opacity-30 border-[#FECA01] hover:bg-[#0f0f0f] text-[#FECA01] font-medium py-2.5 px-5 rounded-lg w-full"
+        {/* Phone number */}
+        <div className="gird items-center ">
+          <a
+              href="https://bit.ly/BenjaminDesign"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Enviar Mensaje
-            </button>
-          </form>
-        )}
+            <div className="mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+              <Image src={ContactIcon} alt="Phone Icon" />
+              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+                +52 55 8093 7225
+              </p>
+            </div>
+          </a>
+        </div>
+
+        {/* Correo */}
+        <div className="gird items-center ">
+          <a
+              href="mailto:benjaminortega.mtnez@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <div className="mt-3 mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+              <Image src={MailIcon} alt="Mail Icon" />
+              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+              benjaminortega.mtnez@gmail.com
+              </p>
+            </div>
+          </a>
+        </div>
+
+        {/* GitHub */}
+        <div className="gird items-center">
+          <a
+              href="https://github.com/benjaminortegamtnez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <div className="mt-3 mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+              <Image src={GithubIcon} alt="Github Icon" />
+              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+                www.github.com/benjaminortegamtnez
+              </p>
+            </div>
+          </a>
+        </div>
+     
+        {/* LinkedIn */}
+        <div className="gird items-center">
+          <a
+              href="https://www.linkedin.com/in/benjamín-ortega-martínez"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+            <div className="mt-3 mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+              <Image src={LinkedinIcon} alt="Linkedin Icon" />
+              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+                www.linkedin.com/in/benjamín-ortega-martínez
+              </p>
+            </div>
+          </a>
+        </div>
+
       </div>
     </section>
   );
 };
 
 export default EmailSection;
+
+
+// <button
+// type="submit"
+// className="bg-[#1b1d22] border border-opacity-30 border-[#FECA01] hover:bg-[#0f0f0f] text-[#FECA01] font-medium py-2.5 px-5 rounded-lg w-full"
+// >
+// Enviar Mensaje
+// </button>
+
+// https://mx.computrabajo.com/trabajo-de-disenador-web-en-ciudad-de-mexico#BF1C35A457DFF26061373E686DCF3405

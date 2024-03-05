@@ -80,7 +80,7 @@ const InfografiaGallery = () => {
           <h2 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
             Infografías, Póster y Carteles
           </h2>
-          <p className="text-base lg:text-lg text-white md:mb-8">
+          <p className="sm:text-base text-sm lg:text-lg text-white md:mb-8">
           Cada diseño es una expresión única de creatividad y comunicación visual. Desde infografías que comunican datos complejos hasta carteles que cuentan historias visuales.
           </p>
         </div>

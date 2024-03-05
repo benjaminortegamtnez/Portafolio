@@ -56,13 +56,13 @@ const AboutSection = () => {
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-[#A37D04] via-[#FECA01] to-[#FFD757]">Sobre mí</h2>
-          <p className="text-base lg:text-lg">
+          <p className="sm:text-base text-sm lg:text-lg">
           Soy un desarrollador Full Stack con Licenciatura en Diseño, dedicado a
             la constante búsqueda de conocimiento en el ámbito de las tecnologías
             de la información. Abordo problemas con enfoque creativo para ofrecer
             soluciones a diversas necesidades a través el diseño.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row justify-start mt-8 sm:text-base text-sm">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
@@ -85,7 +85,7 @@ const AboutSection = () => {
               Certificado{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-8 sm:text-base text-sm">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

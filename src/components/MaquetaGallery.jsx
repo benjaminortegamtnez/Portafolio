@@ -113,7 +113,7 @@ const MaquetaGallery = () => {
               <h2 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
               DiNaRe - Maqueta Web
               </h2>
-              <p className="text-base lg:text-lg text-white md:mb-8">
+              <p className="sm:text-base text-sm lg:text-lg text-white md:mb-8">
               Durante mi servicio social en CUDI, como Diseñador Gráfico contribuí al proyecto DiNaRe, el nuevo servicio de REMERI dedicado a la visibilidad del acceso abierto en México. En este desafío, diseñé y desarrollé una propuesta integral para el sitio web de DiNaRe, un repositorio de contenido científico en el ámbito académico. Siguiendo cuidadosamente el mapa de especificaciones proporcionado por el cliente, creé los componentes visuales necesarios para una experiencia de usuario efectiva y atractiva.
               </p>
             </div>
@@ -183,7 +183,7 @@ const MaquetaGallery = () => {
               <h3 className="text-4xl font-semibold mt-12 mb-8 md:mb-3 text-[#FECA01]">
                 Créditos
               </h3>
-              <p className="text-base lg:text-lg text-white">
+              <p className="sm:text-base text-sm lg:text-lg text-white">
                 Al formar parte de la distinguida comunidad de CUDI durante mi servicio social, me enorgullece compartir que mi contribución se refleja en la sección de <a href="https://cudi.edu.mx/creditos" target="_blank" rel="noopener noreferrer" className="text-[#FECA01] underline">créditos del sitio web oficial de CUDI</a>. Aprecio profundamente la oportunidad de participar en proyectos significativos y colaborar a través de mi labor como Diseñador Gráfico.
               </p>
             </div>
