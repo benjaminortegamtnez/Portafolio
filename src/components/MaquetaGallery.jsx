@@ -187,13 +187,15 @@ const MaquetaGallery = () => {
                 Al formar parte de la distinguida comunidad de CUDI durante mi servicio social, me enorgullece compartir que mi contribución se refleja en la sección de <a href="https://cudi.edu.mx/creditos" target="_blank" rel="noopener noreferrer" className="text-[#FECA01] underline">créditos del sitio web oficial de CUDI</a>. Aprecio profundamente la oportunidad de participar en proyectos significativos y colaborar a través de mi labor como Diseñador Gráfico.
               </p>
             </div>
-            <div className="flex items-center justify-center mt-28 ">
+            
+            <div className="flex items-center justify-center mt-20">
               <Link href="/#projects">
-                <div className="rounded-full border-2 px-6 py-3 text-xl cursor-pointer text-white hover:text-[#FECA01] hover:border-[#FECA01]">
+                <div className="bg-[#0f0f0f] rounded-full border border-opacity-30 border-white px-6 py-3 text-xl cursor-pointer text-white hover:text-[#FECA01] hover:border-[#FECA01]">
                   Diseño
                 </div>
               </Link>
             </div>
+
           </div>
           
         </section>

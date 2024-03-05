@@ -9,7 +9,7 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
+      className="grid md:grid-cols-2 my-12 md:my-12 py-9 gap-4 relative "
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#A37D04] to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
@@ -31,9 +31,9 @@ const EmailSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+            <div className="mr-1 rounded-2xl flex items-center">
               <Image src={ContactIcon} alt="Phone Icon" />
-              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+              <p className="sm:text-base text-sm text-[#ADB7BE]  hover:text-[#FECA01] cursor-pointer ml-2">
                 +52 55 8093 7225
               </p>
             </div>
@@ -47,9 +47,9 @@ const EmailSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="mt-3 mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+            <div className="mt-3 mr-1 rounded-2xl flex items-center">
               <Image src={MailIcon} alt="Mail Icon" />
-              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+              <p className="sm:text-base text-sm text-[#ADB7BE]  hover:text-[#FECA01] cursor-pointer ml-2">
               benjaminortega.mtnez@gmail.com
               </p>
             </div>
@@ -63,9 +63,9 @@ const EmailSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="mt-3 mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+            <div className="mt-3 mr-1 rounded-2xl flex items-center">
               <Image src={GithubIcon} alt="Github Icon" />
-              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+              <p className="sm:text-base text-sm text-[#ADB7BE] hover:text-[#FECA01] cursor-pointer ml-2">
                 www.github.com/benjaminortegamtnez
               </p>
             </div>
@@ -79,9 +79,9 @@ const EmailSection = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-            <div className="mt-3 mr-1 hover:bg-[#292929] rounded-2xl flex items-center">
+            <div className="mt-3 mr-1 rounded-2xl flex items-center">
               <Image src={LinkedinIcon} alt="Linkedin Icon" />
-              <p className="sm:text-base text-sm text-[#ADB7BE] cursor-pointer ml-2">
+              <p className="sm:text-base text-sm text-[#ADB7BE]  hover:text-[#FECA01] cursor-pointer ml-2">
                 www.linkedin.com/in/benjamín-ortega-martínez
               </p>
             </div>
@@ -96,11 +96,11 @@ const EmailSection = () => {
 export default EmailSection;
 
 
-// <button
-// type="submit"
-// className="bg-[#1b1d22] border border-opacity-30 border-[#FECA01] hover:bg-[#0f0f0f] text-[#FECA01] font-medium py-2.5 px-5 rounded-lg w-full"
-// >
-// Enviar Mensaje
-// </button>
+
 
 // https://mx.computrabajo.com/trabajo-de-disenador-web-en-ciudad-de-mexico#BF1C35A457DFF26061373E686DCF3405
+// https://mx.computrabajo.com/trabajo-de-disenador-en-gustavo-a-madero?oi=CD2281CBDFCC014661373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True
+// https://mx.computrabajo.com/trabajo-de-disenador-en-gustavo-a-madero?oi=CD2281CBDFCC014661373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#8A8AD312CACD9ECD61373E686DCF3405
+// https://mx.computrabajo.com/trabajo-de-disenador-en-gustavo-a-madero?oi=CD2281CBDFCC014661373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#6ECF27549488321061373E686DCF3405
+// https://mx.computrabajo.com/trabajo-de-disenador-grafico-en-miguel-hidalgo?oi=39E9935FB25CFFD961373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#634AFCB2F3B960DD61373E686DCF3405
+// https://mx.computrabajo.com/trabajo-de-disenador-en-ciudad-de-mexico-en-benito-juarez?oi=4AA53BC96315559261373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#FA04830DD5B837C661373E686DCF3405
