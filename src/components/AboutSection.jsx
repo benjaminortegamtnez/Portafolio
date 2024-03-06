@@ -9,7 +9,7 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 text-[#FECA01]">
-        <li>Creativo</li>
+        <li>Creativo.</li>
         <li>Trabajo en equipo.</li>
         <li>Pensamiento crítico.</li>
         <li>Rápido Aprendizaje.</li>
@@ -23,8 +23,15 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2 text-[#FECA01]">
-        <li>Bootcamp en Desarrollo Java Full Stack - Generation México.</li>
-        <li>Universidad Autónoma Metropolitana - Cuajimalpa.</li>
+        <li className="mt-3">Certificación Java FullStack Developer.</li>
+        <div>
+          <p className="text-white">Bootcamp en Desarrollo Java Full Stack - Generation México.</p>
+        </div>
+        
+        <li className="mt-3">Licenciatura Diseño lntegral.</li>
+        <div>
+          <p className="text-white">Universidad Autónoma Metropolitana - Unidad Cuajimalpa.</p>
+        </div>
       </ul>
     ),
   },
@@ -33,7 +40,10 @@ const TAB_DATA = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2 text-[#FECA01]">
-        <li>Certificación Java FullStack Developer - Generation México.</li>
+        <li className="mt-3">Certificación Java FullStack Developer.</li>
+        <div>
+          <p className="text-white">Bootcamp en Desarrollo Java Full Stack - Generation México.</p>
+        </div>
       </ul>
     ),
   },
@@ -57,10 +67,7 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-[#A37D04] via-[#FECA01] to-[#FFD757]">Sobre mí</h2>
           <p className="sm:text-base text-sm lg:text-lg">
-          Soy un desarrollador Full Stack con Licenciatura en Diseño, dedicado a
-            la constante búsqueda de conocimiento en el ámbito de las tecnologías
-            de la información. Abordo problemas con enfoque creativo para ofrecer
-            soluciones a diversas necesidades a través el diseño.
+          Soy un Diseñador Integral con experiencia en soluciones personalizadas. Mi enfoque se centra en comprender las necesidades específicas de los clientes y transformar esas ideas en propuestas visualmente atractivas y funcionalmente efectivas. Además, cuento con certificación en desarrollo Full Stack. Esta combinación de habilidades me permite ofrecer soluciones creativas y técnicas, abordando de manera integral los desafíos del diseño y del desarrollo.
           </p>
           <div className="flex flex-row justify-start mt-8 sm:text-base text-sm">
             <TabButton

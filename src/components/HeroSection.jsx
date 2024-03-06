@@ -48,7 +48,7 @@ const HeroSection = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <div className="mt-4 mr-1 hover:bg-[#292929] rounded-2xl">
+              <div className="mt-4 mr-1 hover:bg-[#292929] rounded-3xl">
                 <Image src={LinkedinIcon} alt="Linkedin Icon" />
               </div>
             </a> 
@@ -58,7 +58,7 @@ const HeroSection = () => {
               target="_blank" 
               rel="noopener noreferrer"
             >
-              <div className="mt-4 mr-1 hover:bg-[#292929] rounded-2xl">
+              <div className="mt-4 mr-2 hover:bg-[#292929] rounded-3xl">
                 <Image src={GithubIcon} alt="Github Icon" />
               </div>
             </a>
@@ -67,9 +67,9 @@ const HeroSection = () => {
               href="https://drive.google.com/drive/folders/19CWMq5dH6dWNusKF20M8W2CPwh7Ra34L?usp=drive_link"
               target="_blank" 
               rel="noopener noreferrer"
-              className="px-1 inline-block py-1 w-[30]  sm:w-fit rounded-full border-full border-2 text-white mt-3"
+              className="px-1 inline-block py-1 w-[30] sm:w-fit rounded-full border-full border-2 text-white mt-4"
             >
-              <span className="block bg-[#121212] hover:bg-[#292929] rounded-full px-5 py-2">
+              <span className="block text-sm bg-[#121212] hover:bg-[#292929] rounded-full px-5 py-2">
                 Descarga CV
               </span>
             </a>
