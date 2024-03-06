@@ -9,6 +9,7 @@ import InfografiaGallery from "./InfografiaGallery";
 import RedesSociales from "./RedesSociales";
 import MaquetaGallery from "./MaquetaGallery";
 import FotoProducto from "./FotoProducto";
+import FotoRetrato from "./FotoRetrato";
 
 const projectsData = [
   {
@@ -92,6 +93,15 @@ const projectsData = [
     gitUrl: "/#producto",
     previewUrl: "/",
   },
+  {
+    id: 10,
+    title: "Fotografía de Retrato",
+    description: "Retrato Fotográfico y Retoque en Adobe Photoshop.",
+    image: "/images/projects/fotografia.jpg",
+    tag: ["Diseño"],
+    gitUrl: "/#retrato",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => { 
@@ -117,6 +127,8 @@ const ProjectsSection = () => {
       setSelectedComponent("MaquetaWeb");
     } else if (gitUrl === "/#producto") {
       setSelectedComponent("FotoProducto");
+    } else if (gitUrl === "/#retrato") {
+      setSelectedComponent("FotoRetrato");
     } else {
       setSelectedComponent(null);
     }
@@ -192,6 +204,9 @@ const ProjectsSection = () => {
       )}
       {selectedComponent === "MaquetaWeb" && (
         <MaquetaGallery />
+      )}
+      {selectedComponent === "FotoRetrato" && (
+        <FotoRetrato />
       )}
       {selectedComponent === "FotoProducto" && (
         <FotoProducto />
