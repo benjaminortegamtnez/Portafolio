@@ -8,6 +8,7 @@ import DisenoLogoCards from "./DisenoLogoCards";
 import InfografiaGallery from "./InfografiaGallery";
 import RedesSociales from "./RedesSociales";
 import MaquetaGallery from "./MaquetaGallery";
+import FotoProducto from "./FotoProducto";
 
 const projectsData = [
   {
@@ -82,6 +83,15 @@ const projectsData = [
     gitUrl: "/#maqueta",
     previewUrl: "/#maqueta",
   },
+  {
+    id: 9,
+    title: "Fotografía de Producto",
+    description: "Fotografía Profesional y Edición en Adobe Photoshop.",
+    image: "/images/projects/MAY_3.jpg",
+    tag: ["Diseño"],
+    gitUrl: "/#producto",
+    previewUrl: "/",
+  },
 ];
 
 const ProjectsSection = () => { 
@@ -105,6 +115,8 @@ const ProjectsSection = () => {
       setSelectedComponent("RedesSociales");
     } else if (gitUrl === "/#maqueta") {
       setSelectedComponent("MaquetaWeb");
+    } else if (gitUrl === "/#producto") {
+      setSelectedComponent("FotoProducto");
     } else {
       setSelectedComponent(null);
     }
@@ -180,6 +192,9 @@ const ProjectsSection = () => {
       )}
       {selectedComponent === "MaquetaWeb" && (
         <MaquetaGallery />
+      )}
+      {selectedComponent === "FotoProducto" && (
+        <FotoProducto />
       )}
       </div>
     </section> 
