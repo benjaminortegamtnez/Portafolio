@@ -12,19 +12,28 @@ import FotoProducto from "./FotoProducto";
 import FotoRetrato from "./FotoRetrato";
 
 const projectsData = [
+  // {
+  //   id: 1,
+  //   title: "FrontEnd Store",
+  //   description: "Responsive - Proyecto 1 - HTML5, CSS3",
+  //   image: "/images/projects/frontend_store.JPG",
+  //   tag: ["Web"],
+  //   gitUrl: "https://github.com/benjaminortegamtnez/Pagina1-Design-Freelancer",
+  //   previewUrl: "https://pagina-frontend-store.netlify.app/",
+  // },
   {
     id: 1,
-    title: "FrontEnd Store",
-    description: "Responsive - Proyecto 1 - HTML5, CSS3",
-    image: "/images/projects/frontend_store.JPG",
+    title: "Animales de Compañía",
+    description: "Responsive - Proyecto 2 - HTML5, CSS3",
+    image: "/images/projects/animales.JPG",
     tag: ["Web"],
-    gitUrl: "https://github.com/benjaminortegamtnez/Pagina1-Design-Freelancer",
-    previewUrl: "https://pagina-frontend-store.netlify.app/",
+    gitUrl: "https://github.com/benjaminortegamtnez/Pagina4-AnimalesDeCompa-a",
+    previewUrl: "https://derechos-de-los-animales.netlify.app/",
   },
   {
     id: 2,
     title: "Blog De Café",
-    description: "Responsive - Proyecto 2 - HTML5, CSS3",
+    description: "Responsive - Proyecto 1 - HTML5, CSS3",
     image: "/images/projects/blogdecafe.JPG",
     tag: ["Web"],
     gitUrl: "https://github.com/benjaminortegamtnez/Pagina3-BlogDeCafe",

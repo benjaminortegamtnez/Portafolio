@@ -96,9 +96,3 @@ export default EmailSection;
 
 
 
-// https://mx.computrabajo.com/trabajo-de-disenador-web-en-ciudad-de-mexico#BF1C35A457DFF26061373E686DCF3405
-// https://mx.computrabajo.com/trabajo-de-disenador-en-gustavo-a-madero?oi=CD2281CBDFCC014661373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True
-// https://mx.computrabajo.com/trabajo-de-disenador-en-gustavo-a-madero?oi=CD2281CBDFCC014661373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#8A8AD312CACD9ECD61373E686DCF3405
-// https://mx.computrabajo.com/trabajo-de-disenador-en-gustavo-a-madero?oi=CD2281CBDFCC014661373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#6ECF27549488321061373E686DCF3405
-// https://mx.computrabajo.com/trabajo-de-disenador-grafico-en-miguel-hidalgo?oi=39E9935FB25CFFD961373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#634AFCB2F3B960DD61373E686DCF3405
-// https://mx.computrabajo.com/trabajo-de-disenador-en-ciudad-de-mexico-en-benito-juarez?oi=4AA53BC96315559261373E686DCF3405&utm_source=Email&utm_campaign=auto_cand_alertacargosdiaria_gmail&utm_medium=freq1_title4_cycle4_d2024030509_notag&fgoa=True#FA04830DD5B837C661373E686DCF3405
