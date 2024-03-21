@@ -42,6 +42,9 @@ const TAB_DATA = [
       <ul className="list-disc pl-2 text-[#FECA01]">
         <li className="mt-3">Certificación Java FullStack Developer.</li>
         <div>
+          <p className="text-white">Bootcamp en Desarrollo Java Full Stack - Generation México.</p>
+        </div>
+        {/* <div>
           <Image 
             className="mt-2 rounded" src="/images/certificado.png" 
             alt="Imagén de certificado" 
@@ -49,7 +52,7 @@ const TAB_DATA = [
             height={200}
             layout="responsive" 
           />
-        </div>
+        </div> */}
       </ul>
     ),
   },
