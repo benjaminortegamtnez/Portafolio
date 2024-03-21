@@ -28,7 +28,7 @@ const TAB_DATA = [
           <p className="text-white">Bootcamp en Desarrollo Java Full Stack - Generation México.</p>
         </div>
         
-        <li className="mt-3">Licenciatura Diseño lntegral.</li>
+        <li className="mt-3">Licenciatura en Diseño.</li>
         <div>
           <p className="text-white">Universidad Autónoma Metropolitana - Unidad Cuajimalpa.</p>
         </div>
@@ -42,7 +42,13 @@ const TAB_DATA = [
       <ul className="list-disc pl-2 text-[#FECA01]">
         <li className="mt-3">Certificación Java FullStack Developer.</li>
         <div>
-          <p className="text-white">Bootcamp en Desarrollo Java Full Stack - Generation México.</p>
+          <Image 
+            className="mt-2 rounded" src="/images/certificado.png" 
+            alt="Imagén de certificado" 
+            width={200} 
+            height={200}
+            layout="responsive" 
+          />
         </div>
       </ul>
     ),
@@ -62,7 +68,13 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image className="hidden md:block" src="/images/mi7.png" alt="fotografía personalizada" width={400} height={400} />
+        <Image 
+          className="hidden md:block" 
+          src="/images/mi7.png" 
+          alt="fotografía personalizada" 
+          width={400} 
+          height={400} 
+        />
 
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-[#A37D04] via-[#FECA01] to-[#FFD757]">Sobre mí</h2>
@@ -92,7 +104,7 @@ const AboutSection = () => {
               Certificado{" "}
             </TabButton>
           </div>
-          <div className="mt-8 sm:text-base text-sm">
+          <div className="mt-4 sm:text-base text-sm">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>
